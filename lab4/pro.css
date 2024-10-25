@@ -1,0 +1,77 @@
+/* General Page Styling */
+body {
+    background-image: url('images.jpg'); /* Путь к вашему изображению фона */
+    background-size: cover; /* Заставить изображение заполнять весь экран */
+    background-position: center; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container to Center Elements */
+.container {
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo-container {
+    margin-top: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Game Title Styling */
+.game-title {
+    font-size: 45px;
+    margin: 10px 0;
+    color: #bf1f13;
+    
+}
+
+/* Dice Styling */
+.dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease;
+}
+
+/* Button Styling */
+#rollButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#rollButton:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .dice {
+        width: 80px;
+        height: 80px;
+    }
+
+    #rollButton {
+        font-size: 16px;
+    }
+}
