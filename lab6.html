@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+  <div class="music-player">
+    <img id="track-cover" src="cover1.jpg" alt="Track Cover" class="track-cover">
+    <h2 id="track-title">Бонни и Клайд</h2>
+    <h3 id="track-artist">MiyaGi Эндшпиль</h3>
+
+    <div class="controls">
+        <button id="prev-btn">
+          <img src="prev.png" alt="Previous">
+        </button>
+        <button id="play-pause-btn">
+          <img src="play.png" alt="Play" id="play-icon">
+          <img src="pause.png" alt="Pause" id="pause-icon" style="display: none;">
+        </button>
+        <button id="next-btn">
+          <img src="next.png" alt="Next">
+        </button>
+      </div>
+
+    <div class="progress-bar-container">
+      <input type="range" id="progress-bar" value="0" step="1" min="0" max="100">
+    </div>
+
+    <div class="volume-control">
+      <label for="volume-slider">Volume:</label>
+      <input type="range" id="volume-slider" value="1" step="0.1" min="0" max="1">
+    </div>
+  </div>
+  
+  <div class="track-list">
+    <h3>Playlist</h3>
+    <ul id="playlist"></ul>
+  </div>
+</div>
+
+  <script src="lab6.js"></script>
+</body>
+</html>
