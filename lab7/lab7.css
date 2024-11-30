@@ -1,0 +1,56 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('comicsBackg.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Избегает повторения фона */
+    background-position: center center; /* Центрирует фон */
+    height: 100vh; /* Высота на весь экран */
+    width: 100%; /* Ширина на весь экран */
+    display: flex; /* Устанавливаем флекс-бокс для выравнивания */
+    align-items: center; /* Центрируем контент вертикально */
+    justify-content: center; /* Центрируем контент горизонтально */
+}
+
+h1, h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#hero-avatar {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Устанавливает изображение по размеру контейнера */
+    margin-bottom: 20px;
+    /* border: 5px solid #ecf0f1;  */
+    /* border-radius: 0;  */
+    /* display: block;  */
+    margin-left: auto; /* Центрирование по горизонтали */
+    margin-right: auto; /* Центрирование по горизонтали */
+}
+
+.list-group-item {
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    border: 1px solid #dcdde1;
+    text-align: center; /* Центрирование текста внутри элементов списка */
+}
+
+.list-group-item:hover {
+    transition: background-color 0.3s ease;
+    /* background-color: #dcdde1;  */
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center; /* Центрирует текст в контейнере */
+}
+
+#hero-details {
+    margin-top: 20px;
+    text-align: center; /* Центрирование текста в списке */
+}
